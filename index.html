@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>eMIP Halal Brain</title>
+<meta name="description" content="Nota dan otak projek: eMIP permukaan terelektropolimer untuk pengesanan halal.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Ccircle cx='16' cy='16' r='6' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#ringkasan">Langkau ke kandungan</a>
+
+<header class="topbar">
+  <button class="btn menu-btn" id="menu" aria-label="Buka menu">Menu</button>
+  <div class="brand"><i class="dot"></i>eMIP Halal <span class="long">· Brain</span></div>
+  <div class="search"><input id="q" type="search" placeholder="Cari dalam nota…" aria-label="Cari"></div>
+  <button class="btn" id="theme" aria-label="Tukar tema">Tema</button>
+</header>
+
+<div class="layout">
+<nav class="side" aria-label="Navigasi">
+  <div class="grp">Gambaran</div>
+  <a href="#ringkasan">Ringkasan</a>
+  <a href="#audit">Audit dokumen</a>
+  <a href="#konteks">Konteks &amp; RQ/Jurang</a>
+  <div class="grp">Keputusan &amp; kerja</div>
+  <a href="#keputusan">Keputusan terbuka</a>
+  <a href="#tugasan">Tugasan pertama</a>
+  <a href="#aliran">Aliran kerja</a>
+  <div class="grp">Metodologi</div>
+  <a href="#skop">Skop &amp; carian</a>
+  <a href="#bukti">Jadual bukti</a>
+  <a href="#penilaian">Checklist penilaian</a>
+  <a href="#eksperimen">Reka bentuk eksperimen</a>
+  <div class="grp">Rujukan</div>
+  <a href="#alat">Alat &amp; pemasangan</a>
+  <a href="#peraturan">Peraturan &amp; amaran</a>
+  <a href="#log">Log kemas kini</a>
+</nav>
+
+<main id="main">
+
+<div class="hero">
+  <h1>Surface Electropolymerized MIP (eMIP) untuk Pengesanan Halal</h1>
+  <p>Nota hidup dan “brain” projek. Setiap kandungan di sini diambil daripada dokumen handoff <code>emip-halal-project.md</code> atau ditambah kemudian dengan sumber yang disahkan. Tiada rujukan atau teori direka.</p>
+  <div class="stats">
+    <div class="stat"><b id="stat-open">–</b><span>keputusan belum dibuat</span></div>
+    <div class="stat"><b id="stat-audit">–</b><span>perkara audit perlu tindakan</span></div>
+    <div class="stat"><b id="stat-tasks">–</b><span>tugasan siap</span></div>
+    <div class="stat"><b id="updated">–</b><span>kemas kini terakhir</span></div>
+  </div>
+</div>
+
+<section class="block" id="ringkasan">
+  <h2>Ringkasan projek</h2>
+  <p class="lead">Dari Seksyen 1 dan 2 dokumen handoff (sesi sembang 22 Okt 2026).</p>
+  <div class="grid">
+    <article class="card"><h3>Matlamat</h3><p>Menggunakan K-Dense <em>Scientific Agent Skills</em> untuk mengkaji eMIP permukaan bagi pengesahan halal (mengesan bahan terbitan babi dalam makanan).</p></article>
+    <article class="card"><h3>Peranan projek</h3><p>Lapisan literatur dan bukti, serta perancangan eksperimen, untuk proposal penyelidikan eMIP DNA babi yang sedia ada. Tidak menduplikasi proposal itu.</p></article>
+    <article class="card"><h3>Sebab utama</h3><p>Analisis kritikal lima persona sebelum ini dibuat <strong>tanpa carian literatur langsung</strong>, jadi keyakinannya terhad. Projek ini menggantikan andaian dengan bukti bersumber.</p></article>
+    <article class="card"><h3>Kedudukan eMIP</h3><p>Alat saringan <strong>pelengkap</strong>, label-free, tahan haba, boleh dibawa ke lapangan. <strong>Bukan</strong> pengganti PCR.</p></article>
+  </div>
+</section>
+
+<section class="block" id="audit">
+  <h2>Audit dokumen handoff</h2>
+  <p class="lead">Semakan atas <code>emip-halal-project.md</code> sahaja. Setiap perkara boleh disemak terus dalam dokumen itu.</p>
+  <div class="card" id="audit-list"></div>
+</section>
+
+<section class="block" id="konteks">
+  <h2>Konteks, soalan penyelidikan &amp; jurang</h2>
+  <p class="lead">Seksyen 2.</p>
+  <div class="grid">
+    <article class="card"><h3>Proposal sedia ada</h3>
+      <p>Dokumen .docx dengan abstrak, latar belakang, metodologi empat fasa, mitigasi risiko, hasil dijangka dan garis masa 24 bulan.</p>
+      <ol><li>Pemilihan sasaran</li><li>Elektrosintesis eMIP</li><li>Pengekstrakan templat &amp; rebinding</li><li>Transduksi elektrokimia &amp; validasi</li></ol></article>
+    <article class="card"><h3>Motivasi</h3><p>PCR/qPCR ialah standard emas tetapi mahal, bergantung makmal, dan lemah pada DNA terdegradasi dalam makanan terproses tinggi.</p></article>
+    <article class="card"><h3>Soalan penyelidikan</h3>
+      <ul><li><strong>RQ1</strong> Kemerosotan prestasi mengikut peringkat matriks</li><li><strong>RQ2</strong> Reaktiviti silang dan risiko positif palsu</li><li><strong>RQ3</strong> Syarat translasi dan penerimaan institusi</li></ul></article>
+    <article class="card"><h3>Jurang</h3>
+      <ul><li><strong>G1</strong> Tiada penanda aras berpengesahan matriks</li><li><strong>G2</strong> Kriteria penerimaan institusi &amp; agama belum ditakrif</li><li><strong>G3</strong> Data reaktiviti silang dan kos/kebolehulangan tiada</li></ul></article>
+  </div>
+  <div class="card" style="margin-top:14px"><h3>Hipotesis kerja <span class="pill warn">Belum disokong bukti</span></h3>
+    <ul>
+      <li>Bidang ini terlebih mengoptimumkan transduksi (didakwa agak selesai) dan kurang menangani penyediaan sampel serta penerimaan institusi.</li>
+      <li>Fasa IV patut dihadapankan: ujian matriks terdegradasi yang selari, pra-daftar dan ditanda aras secara bebas, bukan langkah pengesahan terakhir.</li>
+      <li>Kunci-mati regulatori/liabiliti dan kriteria autoriti agama kurang dikaji dalam literatur eMIP.</li>
+    </ul></div>
+  <div class="card" style="margin-top:14px"><h3>Gaya kerja pengguna</h3>
+    <p>Analisis kritikal berstruktur pelbagai sudut (conflict mapping, self-grading, sintesis lintas perspektif); output membezakan tuntutan kuat dan lemah dengan kalibrasi keyakinan; kerja berulang: proposal → kritikan → sintesis → penyulingan; nada ikut tujuan (tesis vs geran).</p></div>
+</section>
+
+<section class="block" id="keputusan">
+  <h2>Keputusan terbuka</h2>
+  <p class="lead">Seksyen 4. Sehingga diputuskan, lalai ialah: <strong>mtDNA babi (cyt b / D-loop), review + kemas kini proposal, matriks makanan diproses.</strong></p>
+  <div class="grid" id="decisions"></div>
+</section>
+
+<section class="block" id="tugasan">
+  <h2>Tugasan pertama untuk ejen</h2>
+  <p class="lead">Seksyen 13. Tanda semak disimpan dalam pelayar anda sahaja; status rasmi berada dalam <code>data.js</code>.</p>
+  <div class="card" id="tasks"></div>
+</section>
+
+<section class="block" id="aliran">
+  <h2>Aliran kerja</h2>
+  <p class="lead">Seksyen 5.</p>
+  <div class="card"><ol>
+    <li><strong>Frame</strong> – tetapkan soalan penyelidikan dan kriteria masuk/keluar.</li>
+    <li><strong>Search</strong> – carian berstruktur dengan research-lookup.</li>
+    <li><strong>Extract</strong> – isi jadual bukti.</li>
+    <li><strong>Appraise</strong> – skor setiap kajian dengan scholar-evaluation dan checklist.</li>
+    <li><strong>Critique &amp; synthesize</strong> – uji G1–G3 dengan scientific-critical-thinking; conflict map dan tuntutan berkeyakinan.</li>
+    <li><strong>Design experiments</strong> – brainstorm, kemudian spesifikasi reka bentuk.</li>
+    <li><strong>Write &amp; visualize</strong> – kemas kini proposal atau draf review; jana rajah.</li>
+    <li><strong>Verify</strong> – semak setiap sitasi, angka dan DOI dengan sumber asal sebelum digunakan semula.</li>
+  </ol></div>
+</section>
+
+<section class="block" id="skop">
+  <h2>Skop &amp; pelan carian</h2>
+  <p class="lead">Seksyen 6 dan 7.</p>
+  <div class="quote">Apakah yang ditunjukkan bukti terbit tentang prestasi analitik, kepilihan dan validasi matriks sebenar sensor eMIP elektropolimer untuk mengesan analit terbitan babi dalam pengesahan halal, dan apakah halangan penerimaannya?</div>
+  <div class="grid">
+    <article class="card"><h3>Termasuk</h3><p>Sensor eMIP elektropolimer (bacaan elektrokimia) untuk DNA, protein/peptida atau penanda babi; 2010 hingga kini; rencana semakan rakan sebaya serta piawaian/panduan relevan.</p></article>
+    <article class="card"><h3>Dikecualikan</h3><p>MIP bukan elektropolimer kecuali sebagai pembanding; adulteran bukan babi kecuali untuk data reaktiviti silang.</p></article>
+    <article class="card"><h3>Pembanding</h3><p>PCR/qPCR, ELISA, LC-MS/MS, FTIR, sensor aptamer atau antibodi.</p></article>
+  </div>
+  <div class="tablewrap" style="margin-top:14px"><table>
+    <thead><tr><th>Blok konsep (AND antara blok, OR dalam blok)</th><th>Istilah</th></tr></thead>
+    <tbody>
+      <tr><td>Polimer</td><td>"molecularly imprinted polymer" OR MIP OR "molecular imprinting"</td></tr>
+      <tr><td>Kaedah</td><td>electropolymerization OR electropolymerised OR electropolymerized OR "electrosynthesis" OR "surface imprinting"</td></tr>
+      <tr><td>Sasaran</td><td>porcine OR pork OR swine OR "pig" OR "Sus scrofa" OR gelatin OR lard</td></tr>
+      <tr><td>Jenis analit</td><td>DNA OR "mitochondrial DNA" OR "cytochrome b" OR "D-loop" OR protein OR peptide</td></tr>
+      <tr><td>Tujuan</td><td>halal OR "food authentication" OR adulteration</td></tr>
+      <tr><td>Bacaan</td><td>voltammetry OR "differential pulse" OR impedance OR electrochemical OR biosensor</td></tr>
+    </tbody></table></div>
+  <p class="lead" style="margin-top:12px">Pangkalan data: PubMed, Scopus, Web of Science, Google Scholar, ScienceDirect, serta panduan pihak berkuasa halal (cth. JAKIM, MUI, GSO, piawaian MS) untuk kriteria penerimaan. Log setiap pertanyaan, tarikh dan bilangan hasil dalam <code>search_log.md</code>.</p>
+</section>
+
+<section class="block" id="bukti">
+  <h2>Jadual bukti</h2>
+  <p class="lead">Seksyen 8. Templat sahaja; <span class="pill gap">belum ada data</span> Tiada kajian dimasukkan lagi.</p>
+  <div class="card"><div class="cols">
+    <span>ID</span><span>Citation</span><span>Year</span><span>DOI</span><span>Analyte</span><span>Template type</span><span>Monomer</span><span>Electrode</span><span>Electropolymerization conditions</span><span>Template removal method</span><span>Rebinding conditions</span><span>Technique (CV/DPV/EIS)</span><span>Linear range</span><span>LOD</span><span>LOQ</span><span>Imprinting factor</span><span>NIP control (Y/N)</span><span>Selectivity targets tested</span><span>Cross-reactivity result</span><span>Real sample matrix</span><span>Processing</span><span>Recovery %</span><span>Reproducibility (RSD, n)</span><span>Reusability</span><span>Comparator method</span><span>Independent validation (Y/N)</span><span>Cost/portability notes</span><span>Quality score</span><span>Notes</span>
+  </div></div>
+</section>
+
+<section class="block" id="penilaian">
+  <h2>Checklist penilaian</h2>
+  <p class="lead">Seksyen 9. Untuk setiap kajian. Output: skor kualiti, conflict map, dan jadual tuntutan (tinggi/sederhana/rendah) dengan sebab.</p>
+  <div class="card"><ul>
+    <li>LOD dilaporkan dalam buffer sahaja, atau dalam matriks terproses sebenar?</li>
+    <li>Kawalan NIP dijalankan dan IF dilaporkan dengan replikasi?</li>
+    <li>Kepilihan diuji terhadap lembu, kambing/biri-biri, ayam, ikan dan spesies relevan lain?</li>
+    <li>DNA didegradasi atau dipanaskan untuk meniru pemprosesan?</li>
+    <li>Prestasi ditanda aras dengan qPCR pada sampel yang sama?</li>
+    <li>n, RSD dan ujian statistik dilaporkan? Ada pelaporan terpilih?</li>
+    <li>Validasi bebas daripada pembangun?</li>
+    <li>Kebolehgunaan semula/regenerasi sensor ditunjukkan?</li>
+    <li>Adakah kertas menangani penerimaan regulatori atau autoriti agama?</li>
+  </ul></div>
+</section>
+
+<section class="block" id="eksperimen">
+  <h2>Rangka reka bentuk eksperimen</h2>
+  <p class="lead">Seksyen 10, untuk proposal.</p>
+  <div class="grid">
+    <article class="card"><h3>Pembolehubah</h3><p>Monomer, nisbah monomer:templat, bilangan kitaran elektropolimerisasi, kadar imbasan, pH/kekuatan ion, protokol penyingkiran templat, masa rebinding.</p></article>
+    <article class="card"><h3>Kawalan</h3><p>NIP, elektrod kosong, DNA spesies bukan sasaran, jujukan scrambled/mismatch.</p></article>
+    <article class="card"><h3>Bacaan</h3><p>CV, DPV, EIS (penyuaian litar Randles); IF; penyuaian isoterma Langmuir/Freundlich.</p></article>
+    <article class="card"><h3>Statistik</h3><p>Replikasi n ≥ 3 (elektrod dan kelompok bebas), LOD = 3.3σ/S, LOQ = 10σ/S, ANOVA atau setara, DoE jika mengoptimum banyak faktor.</p></article>
+    <article class="card"><h3>Aliran matriks (dihadapankan)</h3><p>Sampel spiked dan incurred; mentah, dimasak, autoclave; dikod buta; kriteria penerimaan pra-daftar; tanda aras qPCR.</p></article>
+  </div>
+</section>
+
+<section class="block" id="alat">
+  <h2>Alat &amp; pemasangan</h2>
+  <p class="lead">Seksyen 3. Nama skill dan bilangan <span class="pill warn">UNVERIFIED</span> sehingga disahkan selepas pemasangan.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Skill</th><th>Kegunaan dalam projek</th></tr></thead>
+    <tbody>
+      <tr><td>research-lookup</td><td>Pencarian literatur dan pangkalan data</td></tr>
+      <tr><td>scholar-evaluation</td><td>Menilai kualiti kertas dan kekuatan bukti</td></tr>
+      <tr><td>scientific-critical-thinking</td><td>Menguji tuntutan, semak ketegasan validasi</td></tr>
+      <tr><td>scientific-brainstorming</td><td>Hipotesis, idea eksperimen dan reka bentuk</td></tr>
+      <tr><td>statistical-analysis</td><td>LOD/LOQ, kalibrasi, IF, replikasi, kuasa</td></tr>
+      <tr><td>scientific-visualization</td><td>Plot CV/DPV/EIS, rajah penanda aras</td></tr>
+      <tr><td>scientific-writing</td><td>Kertas review, kemas kini proposal, kapsyen</td></tr>
+      <tr><td>scientific-slides / pptx-posters</td><td>Output pembentangan (pilihan)</td></tr>
+      <tr><td>xlsx</td><td>Jadual pengekstrakan</td></tr>
+    </tbody></table></div>
+  <pre>npx skills add K-Dense-AI/scientific-agent-skills</pre>
+  <p class="lead">Keselamatan: Agent Skills boleh mengarah ejen menjalankan kod sewenang-wenangnya, memasang pakej, membuat permintaan rangkaian dan mengubah fail. Semak SKILL.md dan skrip setiap skill sebelum diaktifkan. Repo: github.com/K-Dense-AI/scientific-agent-skills (dinamakan semula daripada claude-scientific-skills).</p>
+</section>
+
+<section class="block" id="peraturan">
+  <h2>Peraturan &amp; amaran</h2>
+  <p class="lead">Seksyen 12 dan 14.</p>
+  <div class="grid">
+    <article class="card"><h3>Peraturan CLAUDE.md</h3><ul>
+      <li>Sentiasa petik sumber dengan DOI; jangan reka rujukan. Tanda yang belum disahkan sebagai “UNVERIFIED”.</li>
+      <li>Bezakan tuntutan kuat dan lemah; beri tahap keyakinan.</li>
+      <li>Kritikan pelbagai sudut (praktisi, skeptik, ahli ekonomi, regulator/autoriti agama, akademik) dan conflict mapping.</li>
+      <li>Bingkai eMIP sebagai alat saringan pelengkap, bukan pengganti PCR.</li>
+      <li>Log setiap carian; jadual pengekstrakan mesti boleh diulang.</li>
+      <li>Tanya sebelum memasang pakej atau menjalankan skrip yang dimuat turun.</li></ul></article>
+    <article class="card"><h3>Amaran</h3><ul>
+      <li>Layan semua output AI/skill sebagai draf; sahkan sitasi dan angka dengan sumber asal.</li>
+      <li>Penerimaan halal melibatkan kriteria autoriti agama, bukan prestasi analitik sahaja (G2, RQ3).</li>
+      <li>Jangan lebih-dakwa: LOD makmal dalam buffer tidak bermakna prestasi dalam makanan sebenar.</li></ul></article>
+  </div>
+</section>
+
+<section class="block" id="log">
+  <h2>Log kemas kini</h2>
+  <p class="lead">Maklumat baharu direkod di sini. Terbaharu di atas.</p>
+  <div class="timeline" id="log-list"></div>
+</section>
+
+</main>
+</div>
+
+<footer>Dokumen sumber: <code>emip-halal-project.md</code> · Semua perkara perlu disahkan dengan sumber asal sebelum digunakan.</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
